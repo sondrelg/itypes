@@ -1,5 +1,8 @@
 # coding: utf-8
-from collections import Mapping, Sequence
+try:
+    from collections.abc import Mapping, Sequence
+except ImportError:
+    from collections import Mapping, Sequence
 
 
 __version__ = '1.1.0'
